@@ -120,7 +120,7 @@ const setStopVideo = () => {
 const leaveMeet = () => {
   myVideoStream.getVideoTracks()[0].enabled = false;
   myVideoStream.getAudioTracks()[0].enabled = false;
-  window.location.href = `${process.env.PORT}/room`;
+  window.location.href = `https://whispering-savannah-56836.herokuapp.com/room`;
 };
 const toggleChat = () => {
   let html = document.getElementById("chat__section");
