@@ -120,7 +120,7 @@ const setStopVideo = () => {
 const leaveMeet = () => {
   myVideoStream.getVideoTracks()[0].enabled = false;
   myVideoStream.getAudioTracks()[0].enabled = false;
-  window.location.href = "https://localhost:3000/room";
+  window.location.href = `${process.env.PORT}/room`;
 };
 const toggleChat = () => {
   let html = document.getElementById("chat__section");
